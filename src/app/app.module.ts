@@ -4,13 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
+import { FormsModule } from '@angular/forms'; // Need to manually import forms metadata for input editing
+
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent // this was auto-generated when 'ng generate component heroes' was run
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
